@@ -21,7 +21,7 @@
 <body>
 	<header class="header">
 		<div class="clearfix pull-left">
-			<span class="header-logo margin-left">Sistema de Administración Regnum Christi</span>
+			<span class="header-logo margin-left">Sistema de Administración de Secciones del Regnum Christi</span>
 		</div>
 	</header>
 	<div class="content">
@@ -86,8 +86,8 @@
 							</div>
 						</div>
 						<div class="clearfix">
-							<p class="margin-no-top pull-left"><a href="javascript:void(0)">¿Necesitas ayuda?</a></p>
-							<p class="margin-no-top pull-right"><a href="javascript:void(0)">Crear Cuenta  </a></p>
+							<p class="margin-no-top pull-left"><a data-toggle="modal" href="#modal">¿Necesita ayuda?</a></p>
+							<p class="margin-no-top pull-right"><a href="javascript:void(0)">Restaurar contraseña</a></p>
 						</div>
 					</div>
 				</div>
@@ -96,9 +96,31 @@
 	</div>
 	<footer class="footer">
 		<div class="container">
-			<p>Material</p>
+			<p>© Regnum Christi</p>
 		</div>
 	</footer>
+
+<div aria-hidden="true" class="modal fade" id="modal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-xs">
+			<div class="modal-content">
+				<div class="modal-heading">
+					<a class="modal-close" data-dismiss="modal">&times;</a>
+					<h2 class="modal-title">Ayuda</h2>
+				</div>
+				<div class="modal-inner">
+					<p><strong>¿Qué función tiene el servicio?</strong></p>
+					<p>Este sistema se ha diseñado para poder obtener información rápida y valiosa para la toma de decisiones en la gestión de los miembros de las secciones del Regnum Christi</p>
+					<p><strong>¿Qué secciones están disponibles para el servicio?</strong></p>
+					<p>Al ser un servicio en beta, por ahora únicamente está disponible para las secciones de Jóvenes del Poniente y Sur de la Ciudad de México.</p>
+					<p><strong>¿Cómo poder conseguir una cuenta?</strong></p>
+					<p>Para conseguir una cuenta, ponte en contacto con el asistente de sección o en su caso directamente con el director de sección. Él te proporcionará una cuenta si lo ve conveniente.</p>
+				</div>
+				<div class="modal-footer">
+					<p class="text-right"><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">Cerrar</button><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">OK</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/base.min.js" type="text/javascript"></script>
 </body>
